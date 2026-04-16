@@ -51,19 +51,44 @@ const Schedule: React.FC = () => {
 
       <div className="space-y-8">
         {SCHEDULE_DATA[activeDay].map((event) => (
-          <div key={event.id} className="glass-card p-10 rounded-[2.5rem] transition-all hover:translate-x-2">
+          <div 
+            key={event.id} 
+            className={`glass-card p-10 rounded-[2.5rem] transition-all hover:translate-x-2 ${
+              event.highlight 
+                ? 'border-[#ED593B]/50 bg-[#ED593B]/5 shadow-[0_0_40px_rgba(237,89,59,0.1)] ring-1 ring-[#ED593B]/20' 
+                : 'border-white/10'
+            }`}
+          >
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6">
               <div className="flex items-center gap-4">
                 <span className="text-2xl font-black text-white">{event.time}</span>
-                <div className="w-1.5 h-1.5 bg-[#ED593B] rounded-full shadow-[0_0_10px_rgba(237,89,59,0.8)]"></div>
+                <div className={`w-1.5 h-1.5 rounded-full ${event.highlight ? 'bg-[#ED593B] animate-pulse shadow-[0_0_15px_#ED593B]' : 'bg-[#ED593B] shadow-[0_0_10px_rgba(237,89,59,0.8)]'}`}></div>
                 <TypeTag type={event.type} />
               </div>
+              {event.highlight && (
+                <span className="text-[10px] font-black text-[#ED593B] uppercase tracking-[0.3em] bg-[#ED593B]/10 px-4 py-1 rounded-full border border-[#ED593B]/20">
+                  Sesión de Alto Valor
+                </span>
+              )}
             </div>
             <h3 className="text-3xl font-bold mb-3 text-white leading-tight">{event.title}</h3>
             {event.speaker && (
                 <p className="text-[#ED593B] font-bold mb-4 uppercase text-xs tracking-[0.2em]">{event.speaker}</p>
             )}
-            <p className="text-white/60 leading-relaxed text-lg max-w-3xl">{event.description}</p>
+            <p className="text-white/60 leading-relaxed text-lg max-w-3xl mb-6">{event.description}</p>
+            {event.link && (
+              <a 
+                href={event.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#ED593B] font-bold hover:text-white transition-colors group/link"
+              >
+                MÁS INFORMACIÓN
+                <svg className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            )}
           </div>
         ))}
       </div>

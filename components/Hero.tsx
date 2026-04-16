@@ -2,10 +2,10 @@
 import React from 'react';
 
 interface HeroProps {
-  onOpenWaitingList: () => void;
+  onBuyTickets: () => void;
 }
 
-const Hero: React.FC<HeroProps> = ({ onOpenWaitingList }) => {
+const Hero: React.FC<HeroProps> = ({ onBuyTickets }) => {
   return (
     <section 
       className="relative min-h-screen flex items-center justify-center overflow-hidden py-20 bg-transparent"
@@ -47,7 +47,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenWaitingList }) => {
              </p>
              <div className="flex flex-wrap gap-4">
                 <button 
-                  onClick={onOpenWaitingList}
+                  onClick={onBuyTickets}
                   className="px-12 py-5 bg-white text-[#0066D8] font-black text-lg rounded-full transition-all hover:bg-[#ED593B] hover:text-white transform hover:-translate-y-1 active:scale-95 shadow-2xl"
                 >
                   CONSEGUIR ACCESO

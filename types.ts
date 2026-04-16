@@ -8,6 +8,8 @@ export interface ScheduleEvent {
   title: string;
   speaker?: string;
   description: string;
+  link?: string;
+  highlight?: boolean;
 }
 
 export interface Speaker {

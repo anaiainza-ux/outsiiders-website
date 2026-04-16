@@ -2,13 +2,13 @@
 import React, { useState, useEffect } from 'react';
 
 interface NavbarProps {
-  onOpenWaitingList: () => void;
+  onBuyTickets: () => void;
   onNavigateHome: () => void;
   onOpenJobBoard: () => void;
   onNavigateSection: (section: string) => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ onOpenWaitingList, onNavigateHome, onOpenJobBoard, onNavigateSection }) => {
+const Navbar: React.FC<NavbarProps> = ({ onBuyTickets, onNavigateHome, onOpenJobBoard, onNavigateSection }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -52,7 +52,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenWaitingList, onNavigateHome, onOp
             Bolsa de Trabajo
           </button>
           <button
-            onClick={onOpenWaitingList}
+            onClick={onBuyTickets}
             className="bg-[#ED593B] text-white px-8 py-3 rounded-full font-bold hover:bg-[#ff6c4f] transition-all transform hover:scale-105 active:scale-95 shadow-xl shadow-[#ED593B]/20"
           >
             Tickets
@@ -60,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenWaitingList, onNavigateHome, onOp
         </div>
 
         <div className="md:hidden">
-            <button onClick={onOpenWaitingList} className="bg-[#ED593B] p-3 rounded-full text-white shadow-lg">
+            <button onClick={onBuyTickets} className="bg-[#ED593B] p-3 rounded-full text-white shadow-lg">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
             </button>
         </div>

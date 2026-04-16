@@ -7,7 +7,6 @@ import Speakers from './components/Speakers';
 import Sponsors from './components/Sponsors';
 import Footer from './components/Footer';
 import TypewriterInvitation from './components/TypewriterInvitation';
-import WaitingListPopup from './components/ui/WaitingListPopup';
 import JobBoardModal from './components/ui/JobBoardModal';
 import LinkedInModal from './components/ui/LinkedInModal';
 import { WebGLShader } from './components/ui/web-gl-shader';
@@ -17,7 +16,6 @@ import { AppView } from './types';
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<AppView>('home');
   const [showInvitation, setShowInvitation] = useState(true);
-  const [isWaitingListOpen, setIsWaitingListOpen] = useState(false);
   const [isJobModalOpen, setIsJobModalOpen] = useState(false);
   const [isLinkedInModalOpen, setIsLinkedInModalOpen] = useState(false);
   const isFirstMount = useRef(true);
@@ -105,8 +103,8 @@ const App: React.FC = () => {
     } catch (e) {}
   };
 
-  const handleOpenWaitingList = () => {
-    setIsWaitingListOpen(true);
+  const handleBuyTickets = () => {
+    window.open('https://www.ticketopolis.com/outsiiders2026/', '_blank', 'noopener,noreferrer');
   };
 
   const navigateTo = (view: AppView, targetSection?: string) => {
@@ -149,7 +147,7 @@ const App: React.FC = () => {
       <WebGLShader />
 
       <Navbar 
-        onOpenWaitingList={handleOpenWaitingList} 
+        onBuyTickets={handleBuyTickets} 
         onNavigateSection={(section) => navigateTo('home', section)}
         onNavigateHome={() => navigateTo('home')}
         onOpenJobBoard={() => setIsJobModalOpen(true)}
@@ -157,7 +155,7 @@ const App: React.FC = () => {
       
       {currentView === 'home' && (
         <main className="relative z-10">
-          <Hero onOpenWaitingList={handleOpenWaitingList} />
+          <Hero onBuyTickets={handleBuyTickets} />
           
           <section id="agenda" className="py-32 px-4 md:px-8 border-y border-white/5 scroll-mt-24">
             <Schedule />
@@ -197,10 +195,6 @@ const App: React.FC = () => {
       )}
 
       <Footer onOpenLinkedIn={() => setIsLinkedInModalOpen(true)} />
-
-      {isWaitingListOpen && (
-        <WaitingListPopup onClose={() => setIsWaitingListOpen(false)} />
-      )}
 
       {isJobModalOpen && (
         <JobBoardModal onClose={() => setIsJobModalOpen(false)} />

@@ -64,69 +64,79 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
   day1: [
     { 
       id: 'd1e1',
-      time: "11:00 - 11:30", 
+      time: "11:00 am - 11:30 am", 
       type: "Break", 
-      title: "Registro, Bienvenida y Café de Networking", 
-      description: "Recepción de participantes y sesión de networking inicial con café de cortesía." 
+      title: "Bienvenida y Registro", 
+      description: "Recepción de participantes y entrega de kits de bienvenida." 
     },
     { 
       id: 'd1e2',
-      time: "11:30 - 12:30", 
+      time: "11:30 am - 12:30 pm", 
       type: "Conferencia", 
-      title: "Ponencia Magistral sobre IA", 
+      title: "Ponencia sobre IA: El Futuro de la Innovación", 
       speaker: "Ponente por confirmar", 
       description: "Una visión estratégica sobre cómo la Inteligencia Artificial está redefiniendo los límites de la ingeniería moderna." 
     },
     { 
       id: 'd1e3',
-      time: "12:30 - 13:15", 
-      type: "Taller", 
-      title: "Workshop Intensivo: MVPs con IA", 
-      speaker: "Expertos IID", 
-      description: "Taller práctico enfocado en el desarrollo ágil de productos mínimos viables para grupos reducidos." 
+      time: "12:30 pm - 1:30 pm", 
+      type: "Conferencia", 
+      title: "Sports Intelligence con Rayados", 
+      speaker: "Ponente por confirmar", 
+      description: "Data science para la toma de decisiones." 
     },
     { 
       id: 'd1e4',
-      time: "13:15 - 15:00", 
+      time: "1:30 pm - 2:15 pm", 
       type: "Break", 
-      title: "Refreshments and Lunch", 
-      description: "Tiempo de convivencia y comida para los 150 innovadores seleccionados de la jornada." 
+      title: "Lunch & Networking Break", 
+      description: "Tiempo para recargar energías, convivir y conectar con otros innovadores antes del bloque intensivo." 
+    },
+    { 
+      id: 'd1e4b',
+      time: "2:15 pm - 3:00 pm", 
+      type: "Conferencia", 
+      title: "Ciberseguridad en IA", 
+      speaker: "David Victoria - Amazon Web Services", 
+      description: "Exploración de los retos y mejores prácticas de seguridad en la implementación de soluciones de Inteligencia Artificial en la nube." 
     },
     { 
       id: 'd1e5',
-      time: "15:00 - 19:00", 
+      time: "3:00 pm - 7:00 pm", 
       type: "Taller", 
-      title: "BLOQUE DE CERTIFICACIÓN: Sesión Extendida", 
-      speaker: "Certificadores Senior", 
-      description: "Nuestra sesión de mayor valor: Jornada intensiva de certificación técnica en SCRUM, IA o White Belt. Un bloque sólido diseñado para la profesionalización inmediata." 
+      title: "Certificación de White Belt Six Sigma con enfoque en innovación", 
+      speaker: "International White Belt Six Sigma", 
+      description: "Certificación oficial impartida por International White Belt Six Sigma. Un enfoque práctico en la metodología Six Sigma aplicada a procesos de innovación.",
+      link: "https://internationalleansixsigma.org/certificaciones-lean-six-sigma/",
+      highlight: true
     },
     { 
       id: 'd1e6',
-      time: "19:00", 
+      time: "7:00 pm", 
       type: "Break", 
-      title: "Cierre de Actividades Día 1", 
+      title: "Cierre de actividades y clausura del Día 1", 
       description: "Conclusión de la primera jornada del congreso OUTSIIIDERS 2026." 
     },
   ],
   day2: [
     { 
       id: 'd2e1',
-      time: "13:00 - 14:00", 
+      time: "1:00 pm - 2:00 pm", 
       type: "Conferencia", 
-      title: "Introducción y Ponencia: El ecosistema de Aceleradoras en Latam", 
-      speaker: "Estratega Regional", 
-      description: "Análisis profundo de los vehículos de inversión y aceleración que están impulsando el talento tecnológico en Latinoamérica para un aforo selecto de 200 personas." 
+      title: "Ponencia Emprendimiento", 
+      speaker: "Ponente por confirmar", 
+      description: "Una visión estratégica sobre el ecosistema emprendedor y las oportunidades actuales." 
     },
     { 
       id: 'd2e2',
-      time: "14:00 - 15:00", 
+      time: "2:00 pm - 3:00 pm", 
       type: "Break", 
-      title: "Comida - Break de Networking", 
+      title: "Espacio de Networking Lunch", 
       description: "Espacio diseñado para fomentar conexiones orgánicas entre emprendedores e inversionistas mientras recargamos energías." 
     },
     { 
       id: 'd2e3',
-      time: "15:00 - 16:00", 
+      time: "3:00 pm - 4:00 pm", 
       type: "Taller", 
       title: "Herramientas de IA para potenciar tu emprendimiento", 
       speaker: "Tech Founder", 
@@ -134,7 +144,7 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
     },
     { 
       id: 'd2e4',
-      time: "16:00 - 18:00", 
+      time: "4:00 pm - 6:00 pm", 
       type: "Panel", 
       title: "Showcase Disruptivo: Charlas Relámpago", 
       speaker: "Founders Invitados", 
@@ -142,14 +152,14 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
     },
     { 
       id: 'd2e5',
-      time: "18:00 - 19:00", 
+      time: "6:00 pm - 7:00 pm", 
       type: "Break", 
       title: "Venture Café: Espacio de mentoría", 
       description: "Sesiones de mentoría uno a uno y café compartido con fundadores y líderes del ecosistema emprendedor." 
     },
     { 
       id: 'd2e6',
-      time: "19:00 - 20:00", 
+      time: "7:00 pm - 8:00 pm", 
       type: "Conferencia", 
       title: "Keynote: La mentalidad Venture", 
       speaker: "Venture Partner por confirmar", 
@@ -157,7 +167,7 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
     },
     { 
       id: 'd2e7',
-      time: "20:00", 
+      time: "8:00 pm", 
       type: "Break", 
       title: "Networking Cocktail de cierre Día 2", 
       description: "Cierre de la segunda jornada con un cocktail de networking para consolidar las alianzas formadas durante el día." 
@@ -166,7 +176,7 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
   day3: [
     { 
       id: 'd3e1',
-      time: "13:00 - 14:30", 
+      time: "1:00 pm - 2:30 pm", 
       type: "Conferencia", 
       title: "Innovación en el Sector Tecnológico", 
       speaker: "Líderes Tech por confirmar", 
@@ -174,14 +184,14 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
     },
     { 
       id: 'd3e2',
-      time: "14:30 - 15:30", 
+      time: "2:30 pm - 3:30 pm", 
       type: "Break", 
       title: "Refreshments, Lunch & Networking", 
       description: "Momento clave para el contacto empresarial directo entre alumnos y reclutadores de alto nivel." 
     },
     { 
       id: 'd3e3',
-      time: "15:30 - 16:30", 
+      time: "3:30 pm - 4:30 pm", 
       type: "Panel", 
       title: "Mesa Redonda: Innovación en el Sector Industrial", 
       speaker: "CARRIER, QUIMCO, GP CONSTRUCCIÓN", 
@@ -189,7 +199,7 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
     },
     { 
       id: 'd3e4',
-      time: "16:30 - 17:30", 
+      time: "4:30 pm - 5:30 pm", 
       type: "Conferencia", 
       title: "Ponencia Magistral: Key Note Speaker", 
       speaker: "Líder de Industria por confirmar", 
@@ -197,7 +207,7 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
     },
     { 
       id: 'd3e5',
-      time: "17:30 - 18:15", 
+      time: "5:30 pm - 6:15 pm", 
       type: "Conferencia", 
       title: "Cómo sobresalir como profesionista joven", 
       speaker: "Experto en Desarrollo de Carrera", 
@@ -205,7 +215,7 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
     },
     { 
       id: 'd3e6',
-      time: "18:15 - 19:15", 
+      time: "6:15 pm - 7:15 pm", 
       type: "Conferencia", 
       title: "Ponencia: Innovación en el Sector Automotriz", 
       speaker: "Por definir", 
@@ -213,7 +223,7 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
     },
     { 
       id: 'd3e7',
-      time: "19:15", 
+      time: "7:15 pm", 
       type: "Break", 
       title: "Cierre Final outsIIDers 2026", 
       description: "Clausura oficial del congreso, anuncios especiales y acceso prioritario a la bolsa de trabajo para asistentes." 
