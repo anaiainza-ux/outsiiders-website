@@ -1,8 +1,11 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { SPEAKERS } from '../constants';
 
 const Speakers: React.FC = () => {
+  const [showAll, setShowAll] = useState(false);
+  const displayedSpeakers = showAll ? SPEAKERS : SPEAKERS.slice(0, 4);
+
   return (
     <div className="max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
@@ -14,13 +17,13 @@ const Speakers: React.FC = () => {
         </div>
         <div className="hidden md:block">
            <div className="px-6 py-2 border border-white/20 rounded-full font-mono-custom text-xs text-white/40 tracking-widest">
-              TOTAL_KEYNOTES: 04 / 12
+              TOTAL_KEYNOTES: 0{SPEAKERS.length} / 12
            </div>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {SPEAKERS.map((speaker, idx) => (
+        {displayedSpeakers.map((speaker, idx) => (
           <div 
             key={speaker.id} 
             className="group relative h-[500px] rounded-[2rem] overflow-hidden glass-card border-white/10 hover:border-[#ED593B]/50 transition-all duration-500 animate-fade-in"
@@ -57,11 +60,16 @@ const Speakers: React.FC = () => {
         ))}
       </div>
 
-      <div className="mt-20 text-center">
-         <button className="group text-white font-black text-sm tracking-[0.5em] uppercase hover:text-[#ED593B] transition-colors">
-            Ver todos los ponentes <span className="inline-block transition-transform group-hover:translate-x-2">→</span>
-         </button>
-      </div>
+      {!showAll && SPEAKERS.length > 4 && (
+        <div className="mt-20 text-center">
+           <button 
+             onClick={() => setShowAll(true)}
+             className="group text-white font-black text-sm tracking-[0.5em] uppercase hover:text-[#ED593B] transition-colors"
+           >
+              Ver todos los ponentes <span className="inline-block transition-transform group-hover:translate-x-2">→</span>
+           </button>
+        </div>
+      )}
     </div>
   );
 };

@@ -14,31 +14,52 @@ export const COLORS = {
 export const SPEAKERS: Speaker[] = [
   {
     id: '1',
-    name: 'Ponente por confirmar',
+    name: 'Jorge Lerdo de Tejada',
     role: 'Keynote Speaker',
-    company: 'Líder de Industria',
+    company: 'FORBES',
     image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '2',
-    name: 'Ponente por confirmar',
-    role: 'Keynote Speaker',
-    company: 'Líder de Industria',
+    name: 'Bernardo Flores',
+    role: 'Fundador',
+    company: 'Bread',
     image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '3',
-    name: 'Ponente por confirmar',
-    role: 'Keynote Speaker',
-    company: 'Líder de Industria',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800',
+    name: 'David Victoria',
+    role: 'Cybersecurity Specialist',
+    company: 'Amazon Web Services',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '4',
-    name: 'Ponente por confirmar',
-    role: 'Keynote Speaker',
-    company: 'Líder de Industria',
+    name: 'Aris Jiménez',
+    role: 'Coordinadora de Programas',
+    company: 'Startup México NL',
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '5',
+    name: 'Efraín Hernández Gómez',
+    role: 'Director de Agilidad en Innovación',
+    company: 'Grupo AlEn',
+    image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '6',
+    name: 'Francisco Lebrija Z.',
+    role: 'Global Communications & Branding Director',
+    company: 'CEMEX',
+    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '7',
+    name: 'Jose Luis Perez Renteria',
+    role: 'Digital Technology Director',
+    company: 'Arca Continental',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800',
   },
 ];
 
@@ -73,9 +94,9 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
       id: 'd1e2',
       time: "11:30 am - 12:30 pm", 
       type: "Conferencia", 
-      title: "Ponencia sobre IA: El Futuro de la Innovación", 
-      speaker: "Ponente por confirmar", 
-      description: "Una visión estratégica sobre cómo la Inteligencia Artificial está redefiniendo los límites de la ingeniería moderna." 
+      title: "Cómo aprovechar la IA al máximo con FORBES", 
+      speaker: "Jorge Lerdo de Tejada de FORBES", 
+      description: "Una visión estratégica sobre cómo la Inteligencia Artificial está redefiniendo los límites de la industria y la innovación." 
     },
     { 
       id: 'd1e3',
@@ -137,50 +158,67 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
     { 
       id: 'd2e3',
       time: "3:00 pm - 4:00 pm", 
-      type: "Taller", 
-      title: "Herramientas de IA para potenciar tu emprendimiento", 
-      speaker: "Tech Founder", 
-      description: "Sesión práctica sobre la implementación de herramientas de vanguardia para escalar operaciones y automatizar procesos de negocio." 
+      type: "Conferencia", 
+      title: "Ponencia de Emprendimiento Tecnológico", 
+      speaker: "Speaker por confirmar", 
+      description: "Explorando las bases y el futuro del desarrollo de startups de base tecnológica." 
     },
     { 
-      id: 'd2e4',
-      time: "4:00 pm - 6:00 pm", 
-      type: "Panel", 
-      title: "Showcase Disruptivo: Charlas Relámpago", 
-      speaker: "Founders Invitados", 
-      description: "4 presentaciones dinámicas de 30 minutos donde fundadores de startups innovadoras comparten sus hitos, retos y visión de futuro." 
+      id: 'd2e4a',
+      time: "4:00 pm - 5:00 pm", 
+      type: "Conferencia", 
+      title: "Ponencia de Emprendimiento", 
+      speaker: "Speaker por confirmar", 
+      description: "Estrategias y visión para la creación y escalamiento de nuevos negocios." 
+    },
+    { 
+      id: 'd2e4b',
+      time: "5:00 pm - 6:00 pm", 
+      type: "Conferencia", 
+      title: "Ponencia de Emprendimiento Tecnológico", 
+      speaker: "Speaker por confirmar", 
+      description: "Sesión enfocada en la innovación y retos técnicos del ecosistema emprendedor moderno." 
     },
     { 
       id: 'd2e5',
       time: "6:00 pm - 7:00 pm", 
-      type: "Break", 
-      title: "Venture Café: Espacio de mentoría", 
-      description: "Sesiones de mentoría uno a uno y café compartido con fundadores y líderes del ecosistema emprendedor." 
+      type: "Conferencia", 
+      title: "¿Cómo funcionan las aceleradoras en Latam?", 
+      speaker: "Aris Jiménez - Startup México NL", 
+      description: "Explorando el ecosistema de aceleración en Latinoamérica y cómo se impulsa el talento emprendedor a nivel regional." 
     },
     { 
       id: 'd2e6',
       time: "7:00 pm - 8:00 pm", 
       type: "Conferencia", 
-      title: "Keynote: La mentalidad Venture", 
-      speaker: "Venture Partner por confirmar", 
-      description: "Explorando la psicología y estrategia detrás de las inversiones de alto riesgo y el crecimiento exponencial." 
+      title: "Cómo creció mi emprendimiento", 
+      speaker: "Bernardo Flores - Fundador de Bread", 
+      description: "Bernardo Flores nos comparte la historia y las claves estratégicas detrás del crecimiento de su emprendimiento, Bread." 
     },
     { 
       id: 'd2e7',
       time: "8:00 pm", 
       type: "Break", 
-      title: "Networking Cocktail de cierre Día 2", 
-      description: "Cierre de la segunda jornada con un cocktail de networking para consolidar las alianzas formadas durante el día." 
+      title: "Cierre de día 2 del congreso", 
+      description: "Conclusión de la segunda jornada del congreso OUTSIIIDERS 2026." 
     },
   ],
   day3: [
     { 
       id: 'd3e1',
-      time: "1:00 pm - 2:30 pm", 
+      time: "1:00 pm - 1:45 pm", 
       type: "Conferencia", 
-      title: "Innovación en el Sector Tecnológico", 
-      speaker: "Líderes Tech por confirmar", 
-      description: "Bloque intensivo de 2 ponencias de 45 minutos cada una, explorando las fronteras de la tecnología en grandes corporativos." 
+      title: "Innovación dentro de Grupo AlEn", 
+      speaker: "Efraín Hernández Gómez - Grupo AlEn", 
+      description: "Efraín Hernández Gómez, Director de Agilidad en Innovación, comparte cómo se gestiona y escala la innovación dentro de Grupo AlEn." 
+    },
+    { 
+      id: 'd3e1b',
+      time: "1:45 pm - 2:30 pm", 
+      type: "Conferencia", 
+      title: "Ponencia Sector Automotriz", 
+      speaker: "Ponente por confirmar", 
+      description: "Explorando las tendencias, retos e innovaciones dentro de la industria automotriz global." 
     },
     { 
       id: 'd3e2',
@@ -194,24 +232,24 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
       time: "3:30 pm - 4:30 pm", 
       type: "Panel", 
       title: "Mesa Redonda: Innovación en el Sector Industrial", 
-      speaker: "CARRIER, QUIMCO, GP CONSTRUCCIÓN", 
-      description: "Diálogo estratégico con gigantes industriales como CARRIER, QUIMCO y GP CONSTRUCCIÓN sobre la transformación de la manufactura y la infraestructura." 
+      speaker: "CEMEX, CARRIER, QUIMCO, GP CONSTRUCCIÓN", 
+      description: "Diálogo estratégico con gigantes industriales como CEMEX, CARRIER, QUIMCO y GP CONSTRUCCIÓN sobre la transformación de la manufactura y la infraestructura." 
     },
     { 
       id: 'd3e4',
       time: "4:30 pm - 5:30 pm", 
       type: "Conferencia", 
-      title: "Ponencia Magistral: Key Note Speaker", 
-      speaker: "Líder de Industria por confirmar", 
-      description: "Una perspectiva global sobre el liderazgo y la resiliencia en los mercados industriales modernos." 
+      title: "Posicionamiento de marca en CEMEX", 
+      speaker: "Francisco Lebrija Z. - CEMEX", 
+      description: "Francisco Lebrija Z., Global Communications & Branding Director, explica las estrategias de posicionamiento de marca que han consolidado a CEMEX como líder global." 
     },
     { 
       id: 'd3e5',
       time: "5:30 pm - 6:15 pm", 
       type: "Conferencia", 
-      title: "Cómo sobresalir como profesionista joven", 
-      speaker: "Experto en Desarrollo de Carrera", 
-      description: "Sesión de alto valor enfocada en el desarrollo de carrera, branding personal y habilidades críticas para graduandos de ingeniería." 
+      title: "Innovación en Arca Continental", 
+      speaker: "Jose Luis Perez Renteria - Arca Continental", 
+      description: "Jose Luis Perez Renteria, Digital Technology Director, explora las fronteras de la innovación tecnológica y digital dentro de Arca Continental." 
     },
     { 
       id: 'd3e6',

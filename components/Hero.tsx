@@ -61,7 +61,7 @@ const Hero: React.FC<HeroProps> = ({ onBuyTickets }) => {
           <div className="hidden lg:flex flex-col gap-4 text-right">
              <div className="space-y-1">
                 <span className="text-white/40 font-mono-custom text-[10px] tracking-[0.3em] uppercase block">Localización</span>
-                <span className="text-white font-bold block text-xl">CAMPUS MONTERREY</span>
+                <span className="text-white font-bold block text-xl">Tec de Monterrey</span>
              </div>
              <div className="space-y-1">
                 <span className="text-white/40 font-mono-custom text-[10px] tracking-[0.3em] uppercase block">Cronograma</span>
