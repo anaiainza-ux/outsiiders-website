@@ -149,6 +149,19 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
       description: "Una visión estratégica sobre el ecosistema emprendedor y las oportunidades actuales." 
     },
     { 
+      id: 'd2-coffee',
+      time: "1:30 pm - 2:15 pm", 
+      type: "Break", 
+      title: "Coffee by: Noyolo", 
+      description: "Disfruta de la mejor experiencia de café y brunch cortesía de Noyolo.",
+      link: "https://www.instagram.com/noyolobrunch?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      highlight: true,
+      highlightLabel: "Coffee by:",
+      hideTypeTag: true,
+      hideTime: true,
+      isMini: true
+    },
+    { 
       id: 'd2e2',
       time: "2:00 pm - 3:00 pm", 
       type: "Break", 

@@ -10,6 +10,10 @@ export interface ScheduleEvent {
   description: string;
   link?: string;
   highlight?: boolean;
+  highlightLabel?: string;
+  hideTypeTag?: boolean;
+  hideTime?: boolean;
+  isMini?: boolean;
 }
 
 export interface Speaker {
