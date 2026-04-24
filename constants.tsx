@@ -94,7 +94,7 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
       id: 'd1e2',
       time: "11:30 am - 12:30 pm", 
       type: "Conferencia", 
-      title: "Cómo aprovechar la IA al máximo con FORBES", 
+      title: "Agentes de IA: El nuevo equipo que todo profesional del futuro va a liderar", 
       speaker: "Jorge Lerdo de Tejada de FORBES", 
       description: "Una visión estratégica sobre cómo la Inteligencia Artificial está redefiniendo los límites de la industria y la innovación." 
     },
@@ -103,7 +103,7 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
       time: "12:30 pm - 1:30 pm", 
       type: "Conferencia", 
       title: "Sports Intelligence con Rayados", 
-      speaker: "Ponente por confirmar", 
+      speaker: "Marco Avalos Stefani", 
       description: "Data science para la toma de decisiones." 
     },
     { 
