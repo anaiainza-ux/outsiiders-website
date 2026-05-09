@@ -24,13 +24,4 @@ export interface Speaker {
   image: string;
 }
 
-export interface JobPosting {
-  id: string;
-  title: string;
-  company: string;
-  location: string;
-  type: string;
-  link: string;
-}
-
-export type AppView = 'home' | 'jobs' | 'access';
+export type AppView = 'home';

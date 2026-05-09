@@ -15,51 +15,135 @@ export const SPEAKERS: Speaker[] = [
   {
     id: '1',
     name: 'Jorge Lerdo de Tejada',
-    role: 'Keynote Speaker',
+    role: 'Gerente Oficina de Representación Zona Norte',
     company: 'FORBES',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '2',
     name: 'Bernardo Flores',
     role: 'Fundador',
     company: 'Bread',
-    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1530907839339-651581451f2f?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '3',
     name: 'David Victoria',
-    role: 'Cybersecurity Specialist',
-    company: 'Amazon Web Services',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800',
+    role: 'Cloud Engineering Specialist',
+    company: 'AWS',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '4',
     name: 'Aris Jiménez',
     role: 'Coordinadora de Programas',
     company: 'Startup México NL',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1503387762-592dea58ef21?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '5',
     name: 'Efraín Hernández Gómez',
-    role: 'Director de Agilidad en Innovación',
+    role: 'Director Agilidad en innovación',
     company: 'Grupo AlEn',
-    image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1565106430482-8bc3ced6a781?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '6',
-    name: 'Francisco Lebrija Z.',
-    role: 'Global Communications & Branding Director',
+    name: 'Francisco Lebrija',
+    role: 'Global Head of Communications and Branding',
     company: 'CEMEX',
-    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1581094794329-c8112a4e5190?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '7',
     name: 'Jose Luis Perez Renteria',
     role: 'Digital Technology Director',
     company: 'Arca Continental',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '8',
+    name: 'Borja Echarri',
+    role: 'Digital Strategy & Transformation Officer',
+    company: 'FEMSA',
     image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '9',
+    name: 'Santiago Mayagoitia',
+    role: 'Director',
+    company: 'International Lean Six Sigma',
+    image: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '10',
+    name: 'Marco Avalos Stefani',
+    role: 'Analista de datos médico deportivo',
+    company: 'Rayados',
+    image: 'https://images.unsplash.com/photo-1561144443-fbc04308119c?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '11',
+    name: 'Luis Rojas',
+    role: 'Cofounder & CEO',
+    company: 'TeamUp',
+    image: 'https://images.unsplash.com/photo-1485081666428-4ce38f99d62d?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '12',
+    name: 'Antonio Rodriguez',
+    role: 'Founder & CEO',
+    company: 'GRUPO ENIGMA MÉXICO',
+    image: 'https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '13',
+    name: 'Ricardo Cevada',
+    role: 'Founding & Managing Partner',
+    company: 'Core AI',
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '14',
+    name: 'Ignacio Alvarez',
+    role: 'Co-founder',
+    company: 'Moneypool',
+    image: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '15',
+    name: 'David Elizondo',
+    role: 'Manager de productos digitales de AI',
+    company: 'DEACERO',
+    image: 'https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '16',
+    name: 'David Salinas Martinez',
+    role: 'Subdirección VDC',
+    company: 'GP Construcción',
+    image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '17',
+    name: 'Arturo Martinez Torres',
+    role: 'Innovation & Digitalization Manager',
+    company: 'Grupo Quimmco',
+    image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c1025b7?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '18',
+    name: 'Susan Pegueros Ibars',
+    role: 'Sr. Design Engineer',
+    company: 'Carrier HVAC',
+    image: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: '19',
+    name: 'Nestor Quintero',
+    role: 'Global Head Quality & CCUS Technologies',
+    company: 'CEMEX',
+    image: 'https://images.unsplash.com/photo-1581089781785-603411ffdad6?auto=format&fit=crop&q=80&w=800',
   },
 ];
 
@@ -87,47 +171,47 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
       id: 'd1e1',
       time: "11:00 am - 11:30 am", 
       type: "Break", 
-      title: "Bienvenida y Registro", 
-      description: "Recepción de participantes y entrega de kits de bienvenida." 
+      title: "Recepcion y registro de asistentes + palabras de inicio del congreso", 
+      description: "Recepción de participantes y apertura oficial del congreso OUTSIIIDERS 2026." 
     },
     { 
       id: 'd1e2',
       time: "11:30 am - 12:30 pm", 
       type: "Conferencia", 
       title: "Agentes de IA: El nuevo equipo que todo profesional del futuro va a liderar", 
-      speaker: "Jorge Lerdo de Tejada de FORBES", 
-      description: "Una visión estratégica sobre cómo la Inteligencia Artificial está redefiniendo los límites de la industria y la innovación." 
+      speaker: "Jorge Lerdo de Tejada - Forbes - Gerente Oficina de Representación Zona Norte", 
+      description: "Una visión estratégica sobre cómo la Inteligencia Artificial está redefiniendo los límites de la industria y el liderazgo profesional." 
     },
     { 
       id: 'd1e3',
-      time: "12:30 pm - 1:30 pm", 
+      time: "12:30 pm - 1:15 pm", 
       type: "Conferencia", 
-      title: "Sports Intelligence con Rayados", 
-      speaker: "Marco Avalos Stefani", 
-      description: "Data science para la toma de decisiones." 
+      title: "¿Cómo se usan los datos para mejorar el rendimiento de un equipo profesional?", 
+      speaker: "Marco Avalos Stefani - Rayados - Analista de datos médico deportivo", 
+      description: "Exploración de la analítica de datos aplicada al alto rendimiento deportivo en el Club de Fútbol Monterrey." 
     },
     { 
       id: 'd1e4',
-      time: "1:30 pm - 2:15 pm", 
+      time: "1:15 pm - 2:15 pm", 
       type: "Break", 
-      title: "Lunch & Networking Break", 
-      description: "Tiempo para recargar energías, convivir y conectar con otros innovadores antes del bloque intensivo." 
+      title: "Lunch break", 
+      description: "Tiempo para recargar energías y networking libre." 
     },
     { 
       id: 'd1e4b',
       time: "2:15 pm - 3:00 pm", 
       type: "Conferencia", 
-      title: "Ciberseguridad en IA", 
-      speaker: "David Victoria - Amazon Web Services", 
-      description: "Exploración de los retos y mejores prácticas de seguridad en la implementación de soluciones de Inteligencia Artificial en la nube." 
+      title: "¿Cómo las empresas escalan con cloud?", 
+      speaker: "David Victoria - AWS", 
+      description: "Análisis sobre la escalabilidad y las mejores arquitecturas en la nube para empresas modernas." 
     },
     { 
       id: 'd1e5',
       time: "3:00 pm - 7:00 pm", 
       type: "Taller", 
-      title: "Certificación de White Belt Six Sigma con enfoque en innovación", 
-      speaker: "International White Belt Six Sigma", 
-      description: "Certificación oficial impartida por International White Belt Six Sigma. Un enfoque práctico en la metodología Six Sigma aplicada a procesos de innovación.",
+      title: "Curso Certificacion: White Belt Lean Six Sigma", 
+      speaker: "Santiago Mayagoitia - International Lean Six Sigma", 
+      description: "Certificación oficial White Belt impartida por Santiago Mayagoitia. Metodología Lean Six Sigma aplicada a la optimización de procesos e innovación.",
       link: "https://internationalleansixsigma.org/certificaciones-lean-six-sigma/",
       highlight: true
     },
@@ -144,9 +228,9 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
       id: 'd2e1',
       time: "1:00 pm - 2:00 pm", 
       type: "Conferencia", 
-      title: "Ponencia Emprendimiento", 
-      speaker: "Ponente por confirmar", 
-      description: "Una visión estratégica sobre el ecosistema emprendedor y las oportunidades actuales." 
+      title: "Trayectoria de emprendimiento + Problem solution fit", 
+      speaker: "Luis Rojas - TeamUp - Cofounder & CEO", 
+      description: "Trayectoria de emprendimiento y cómo encontrar el ajuste perfecto entre el problema y la solución." 
     },
     { 
       id: 'd2-coffee',
@@ -165,48 +249,48 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
       id: 'd2e2',
       time: "2:00 pm - 3:00 pm", 
       type: "Break", 
-      title: "Espacio de Networking Lunch", 
+      title: "Lunch break", 
       description: "Espacio diseñado para fomentar conexiones orgánicas entre emprendedores e inversionistas mientras recargamos energías." 
     },
     { 
       id: 'd2e3',
       time: "3:00 pm - 4:00 pm", 
       type: "Conferencia", 
-      title: "Ponencia de Emprendimiento Tecnológico", 
-      speaker: "Speaker por confirmar", 
-      description: "Explorando las bases y el futuro del desarrollo de startups de base tecnológica." 
+      title: "ENIGMA: El Poder de Crear Experiencias", 
+      speaker: "Antonio Rodriguez - GRUPO ENIGMA MÉXICO - Founder & CEO", 
+      description: "Descubre cómo crear experiencias impactantes a través del poder de ENIGMA." 
     },
     { 
       id: 'd2e4a',
       time: "4:00 pm - 5:00 pm", 
       type: "Conferencia", 
-      title: "Ponencia de Emprendimiento", 
-      speaker: "Speaker por confirmar", 
-      description: "Estrategias y visión para la creación y escalamiento de nuevos negocios." 
+      title: "De I2D a Builder de IA: cómo convertir problemas reales en sistemas de valor", 
+      speaker: "Ricardo Cevada - Core AI - Founding & Managing Partner", 
+      description: "De I2D a Builder de IA: cómo convertir problemas reales en sistemas de valor." 
     },
     { 
       id: 'd2e4b',
       time: "5:00 pm - 6:00 pm", 
       type: "Conferencia", 
-      title: "Ponencia de Emprendimiento Tecnológico", 
-      speaker: "Speaker por confirmar", 
-      description: "Sesión enfocada en la innovación y retos técnicos del ecosistema emprendedor moderno." 
+      title: "¿Cómo logró Moneypool crecer y convertirse en lo que es hoy?", 
+      speaker: "Ignacio Alvarez - Moneypool - Co-founder", 
+      description: "La historia y estrategia detrás del crecimiento explosivo de Moneypool." 
     },
     { 
       id: 'd2e5',
       time: "6:00 pm - 7:00 pm", 
       type: "Conferencia", 
       title: "¿Cómo funcionan las aceleradoras en Latam?", 
-      speaker: "Aris Jiménez - Startup México NL", 
-      description: "Explorando el ecosistema de aceleración en Latinoamérica y cómo se impulsa el talento emprendedor a nivel regional." 
+      speaker: "Aris Jiménez - Startup México - Coordinadora de Programas en Startup México NL", 
+      description: "¿Cómo funcionan las aceleradoras en Latam?" 
     },
     { 
       id: 'd2e6',
       time: "7:00 pm - 8:00 pm", 
       type: "Conferencia", 
-      title: "Cómo creció mi emprendimiento", 
-      speaker: "Bernardo Flores - Fundador de Bread", 
-      description: "Bernardo Flores nos comparte la historia y las claves estratégicas detrás del crecimiento de su emprendimiento, Bread." 
+      title: "¿Cómo se construye una marca desde cero?", 
+      speaker: "Bernardo Flores - Bread - Fundador", 
+      description: "Bernardo Flores nos comparte las claves estratégicas detrás de la construcción de una marca exitosa desde sus cimientos." 
     },
     { 
       id: 'd2e7',
@@ -222,89 +306,62 @@ export const SCHEDULE_DATA: Record<string, ScheduleEvent[]> = {
       time: "1:00 pm - 1:45 pm", 
       type: "Conferencia", 
       title: "Innovación dentro de Grupo AlEn", 
-      speaker: "Efraín Hernández Gómez - Grupo AlEn", 
-      description: "Efraín Hernández Gómez, Director de Agilidad en Innovación, comparte cómo se gestiona y escala la innovación dentro de Grupo AlEn." 
+      speaker: "Efraín Hernández Gómez - Grupo AlEn - Director Agilidad en innovación", 
+      description: "Efraín Hernández Gómez comparte cómo se gestiona y escala la innovación dentro de Grupo AlEn, líder en productos de limpieza." 
     },
     { 
       id: 'd3e1b',
       time: "1:45 pm - 2:30 pm", 
       type: "Conferencia", 
-      title: "Ponencia Sector Automotriz", 
-      speaker: "Ponente por confirmar", 
-      description: "Explorando las tendencias, retos e innovaciones dentro de la industria automotriz global." 
+      title: "Outsiiider Corporativo: transformación digital e IA en una industria tradicional", 
+      speaker: "David Elizondo - DEACERO - Manager de productos digitales de AI", 
+      description: "Análisis de la transformación digital y la implementación de IA en la industria del acero." 
     },
     { 
       id: 'd3e2',
       time: "2:30 pm - 3:30 pm", 
       type: "Break", 
-      title: "Refreshments, Lunch & Networking", 
+      title: "Lunch break", 
       description: "Momento clave para el contacto empresarial directo entre alumnos y reclutadores de alto nivel." 
     },
     { 
       id: 'd3e3',
       time: "3:30 pm - 4:30 pm", 
       type: "Panel", 
-      title: "Mesa Redonda: Innovación en el Sector Industrial", 
-      speaker: "CEMEX, CARRIER, QUIMCO, GP CONSTRUCCIÓN", 
-      description: "Diálogo estratégico con gigantes industriales como CEMEX, CARRIER, QUIMCO y GP CONSTRUCCIÓN sobre la transformación de la manufactura y la infraestructura." 
+      title: "Mesa redonda: ¿Cómo innovar dentro de sectores establecidos?", 
+      speaker: "David Salinas Martinez (GP), Arturo Martinez (Quimmco), Susan Pegueros (Carrier), Nestor Quintero (CEMEX)", 
+      description: "Panel de discusión sobre estrategias de innovación en industrias maduras y sectores altamente regulados o tradicionales." 
     },
     { 
       id: 'd3e4',
       time: "4:30 pm - 5:30 pm", 
       type: "Conferencia", 
-      title: "Posicionamiento de marca en CEMEX", 
-      speaker: "Francisco Lebrija Z. - CEMEX", 
-      description: "Francisco Lebrija Z., Global Communications & Branding Director, explica las estrategias de posicionamiento de marca que han consolidado a CEMEX como líder global." 
+      title: "Posicionamiento de la empresa en Cemex", 
+      speaker: "Francisco Lebrija - Cemex - Global Head of Communications and Branding", 
+      description: "Francisco Lebrija detalla las claves estratégicas y los pilares del posicionamiento corporativo en una de las empresas de materiales de construcción más importantes del mundo." 
     },
     { 
       id: 'd3e5',
       time: "5:30 pm - 6:15 pm", 
       type: "Conferencia", 
-      title: "Innovación en Arca Continental", 
-      speaker: "Jose Luis Perez Renteria - Arca Continental", 
-      description: "Jose Luis Perez Renteria, Digital Technology Director, explora las fronteras de la innovación tecnológica y digital dentro de Arca Continental." 
+      title: "¿Cómo se implementa innovación a gran escala?", 
+      speaker: "Jose Luis Perez Renteria - Arca Continental - Digital Technology Director", 
+      description: "Exploración de los procesos, metodologías y retos técnicos para llevar la innovación a una escala global en el sector de consumo y tecnología digital." 
     },
     { 
       id: 'd3e6',
-      time: "6:15 pm - 7:15 pm", 
+      time: "6:15 pm - 7:00 pm", 
       type: "Conferencia", 
-      title: "Ponencia: Innovación en el Sector Automotriz", 
-      speaker: "Por definir", 
-      description: "Explorando la electrificación, autonomía y nuevos materiales que están moviendo al sector automotriz global." 
+      title: "¿Cómo se impulsa la transformación digital en FEMSA?", 
+      speaker: "Borja Echarri - FEMSA - Digital Strategy & Transformation Officer", 
+      description: "Borja Echarri comparte la visión estratégica y el roadmap de transformación digital en FEMSA, una de las corporaciones más grandes de Latinoamérica." 
     },
     { 
       id: 'd3e7',
-      time: "7:15 pm", 
+      time: "7:00 pm", 
       type: "Break", 
       title: "Cierre Final outsIIDers 2026", 
-      description: "Clausura oficial del congreso, anuncios especiales y acceso prioritario a la bolsa de trabajo para asistentes." 
+      description: "Clausura oficial del congreso y anuncios especiales." 
     },
   ],
 };
-
-export const JOBS_DATA: JobPosting[] = [
-  {
-    id: 'j1',
-    title: 'Software Engineer (GenAI)',
-    company: 'Innovatech',
-    location: 'Remote / Monterrey',
-    type: 'Full-time',
-    link: '#',
-  },
-  {
-    id: 'j2',
-    title: 'Product Designer (UX/UI)',
-    company: 'Future UX',
-    location: 'Mexico City',
-    type: 'Full-time',
-    link: '#',
-  },
-  {
-    id: 'j3',
-    title: 'Sustainability Consultant',
-    company: 'GreenImpact',
-    location: 'Hybrid',
-    type: 'Internship',
-    link: '#',
-  },
-];

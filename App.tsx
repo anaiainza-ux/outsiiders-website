@@ -7,7 +7,6 @@ import Speakers from './components/Speakers';
 import Sponsors from './components/Sponsors';
 import Footer from './components/Footer';
 import TypewriterInvitation from './components/TypewriterInvitation';
-import JobBoardModal from './components/ui/JobBoardModal';
 import LinkedInModal from './components/ui/LinkedInModal';
 import { WebGLShader } from './components/ui/web-gl-shader';
 import { useCustomCursor } from './hooks/use-custom-cursor';
@@ -16,7 +15,6 @@ import { AppView } from './types';
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<AppView>('home');
   const [showInvitation, setShowInvitation] = useState(true);
-  const [isJobModalOpen, setIsJobModalOpen] = useState(false);
   const [isLinkedInModalOpen, setIsLinkedInModalOpen] = useState(false);
   const isFirstMount = useRef(true);
   const lastHash = useRef(window.location.hash);
@@ -30,23 +28,9 @@ const App: React.FC = () => {
     // Prevenir redirecciones en la carga inicial
     if (isFirstMount.current) {
       isFirstMount.current = false;
-      if (hash === '#jobs') {
-        setCurrentView('home');
-        setIsJobModalOpen(true);
-        try {
-          window.history.replaceState(null, "", window.location.pathname);
-        } catch (e) {
-          window.location.hash = "";
-        }
-        return;
-      }
     }
 
-    if (hash === '#jobs') {
-      setIsJobModalOpen(true);
-      setCurrentView('home');
-      window.history.replaceState(null, "", window.location.pathname);
-    } else if (['#agenda', '#ponentes', '#sponsors'].includes(hash)) {
+    if (['#agenda', '#ponentes', '#sponsors'].includes(hash)) {
       setCurrentView('home');
     } else if (!hash || hash === '#' || hash === '') {
       setCurrentView('home');
@@ -150,7 +134,6 @@ const App: React.FC = () => {
         onBuyTickets={handleBuyTickets} 
         onNavigateSection={(section) => navigateTo('home', section)}
         onNavigateHome={() => navigateTo('home')}
-        onOpenJobBoard={() => setIsJobModalOpen(true)}
       />
       
       {currentView === 'home' && (
@@ -168,37 +151,10 @@ const App: React.FC = () => {
           <section id="sponsors" className="py-32 px-4 md:px-8 border-y border-white/5 scroll-mt-24">
             <Sponsors />
           </section>
-
-          <section id="jobs-section" className="py-32 px-4 md:px-8 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#ED593B]/5 blur-[120px] rounded-full" />
-            
-            <div className="max-w-5xl mx-auto">
-               <div className="glass-card p-16 rounded-[4rem] border-white/10 relative overflow-hidden text-center">
-                  <div className="relative z-10">
-                    <h2 className="text-5xl md:text-7xl font-black mb-8 text-white tracking-tighter uppercase leading-none">EL PRÓXIMO PASO <br/> DE TU <span className="text-[#ED593B]">CARRERA</span></h2>
-                    <p className="text-xl text-white/50 mb-12 max-w-2xl mx-auto leading-relaxed">
-                      Conectamos el talento de la ingeniería con las empresas que están redefiniendo el mundo. Acceso prioritario para la comunidad IID.
-                    </p>
-                    <div className="flex flex-wrap justify-center gap-6">
-                      <button 
-                        onClick={() => setIsJobModalOpen(true)}
-                        className="bg-[#ED593B] hover:bg-white hover:text-[#ED593B] text-white px-12 py-5 rounded-full font-black text-xl transition-all shadow-2xl transform hover:-translate-y-1"
-                      >
-                        ENTRAR A LA BOLSA
-                      </button>
-                    </div>
-                  </div>
-               </div>
-            </div>
-          </section>
         </main>
       )}
 
       <Footer onOpenLinkedIn={() => setIsLinkedInModalOpen(true)} />
-
-      {isJobModalOpen && (
-        <JobBoardModal onClose={() => setIsJobModalOpen(false)} />
-      )}
 
       <LinkedInModal 
         isOpen={isLinkedInModalOpen} 

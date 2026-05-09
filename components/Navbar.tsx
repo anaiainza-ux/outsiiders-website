@@ -4,11 +4,10 @@ import React, { useState, useEffect } from 'react';
 interface NavbarProps {
   onBuyTickets: () => void;
   onNavigateHome: () => void;
-  onOpenJobBoard: () => void;
   onNavigateSection: (section: string) => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ onBuyTickets, onNavigateHome, onOpenJobBoard, onNavigateSection }) => {
+const Navbar: React.FC<NavbarProps> = ({ onBuyTickets, onNavigateHome, onNavigateSection }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -45,12 +44,6 @@ const Navbar: React.FC<NavbarProps> = ({ onBuyTickets, onNavigateHome, onOpenJob
               {item}
             </a>
           ))}
-          <button
-            onClick={onOpenJobBoard}
-            className="text-white/70 font-bold hover:text-white transition-all text-sm uppercase tracking-widest"
-          >
-            Bolsa de Trabajo
-          </button>
           <button
             onClick={onBuyTickets}
             className="bg-[#ED593B] text-white px-8 py-3 rounded-full font-bold hover:bg-[#ff6c4f] transition-all transform hover:scale-105 active:scale-95 shadow-xl shadow-[#ED593B]/20"
