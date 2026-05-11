@@ -1,5 +1,5 @@
 
-import { ScheduleEvent, Speaker, JobPosting } from './types';
+import { ScheduleEvent, Speaker } from './types';
 
 export const COLORS = {
   BASE_BLUE: '#000000',
@@ -24,7 +24,7 @@ export const SPEAKERS: Speaker[] = [
     name: 'Bernardo Flores',
     role: 'Fundador',
     company: 'Bread',
-    image: 'https://images.unsplash.com/photo-1530907839339-651581451f2f?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '3',
@@ -38,21 +38,21 @@ export const SPEAKERS: Speaker[] = [
     name: 'Aris Jiménez',
     role: 'Coordinadora de Programas',
     company: 'Startup México NL',
-    image: 'https://images.unsplash.com/photo-1503387762-592dea58ef21?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '5',
     name: 'Efraín Hernández Gómez',
     role: 'Director Agilidad en innovación',
     company: 'Grupo AlEn',
-    image: 'https://images.unsplash.com/photo-1565106430482-8bc3ced6a781?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '6',
     name: 'Francisco Lebrija',
-    role: 'Global Head of Communications and Branding',
+    role: 'Global Head of Communications and Branding - CEMEX',
     company: 'CEMEX',
-    image: 'https://images.unsplash.com/photo-1581094794329-c8112a4e5190?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '7',
@@ -80,14 +80,14 @@ export const SPEAKERS: Speaker[] = [
     name: 'Marco Avalos Stefani',
     role: 'Analista de datos médico deportivo',
     company: 'Rayados',
-    image: 'https://images.unsplash.com/photo-1561144443-fbc04308119c?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '11',
     name: 'Luis Rojas',
     role: 'Cofounder & CEO',
     company: 'TeamUp',
-    image: 'https://images.unsplash.com/photo-1485081666428-4ce38f99d62d?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '12',
@@ -129,7 +129,7 @@ export const SPEAKERS: Speaker[] = [
     name: 'Arturo Martinez Torres',
     role: 'Innovation & Digitalization Manager',
     company: 'Grupo Quimmco',
-    image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c1025b7?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1504328306483-c4161e382535?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '18',
@@ -141,9 +141,9 @@ export const SPEAKERS: Speaker[] = [
   {
     id: '19',
     name: 'Nestor Quintero',
-    role: 'Global Head Quality & CCUS Technologies',
+    role: 'Global Head Quality & CCUS Technologies - CEMEX',
     company: 'CEMEX',
-    image: 'https://images.unsplash.com/photo-1581089781785-603411ffdad6?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1581244276891-8bb09977dad1?auto=format&fit=crop&q=80&w=800',
   },
 ];
 
