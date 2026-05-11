@@ -14,6 +14,36 @@ const Sponsors: React.FC = () => {
         <p className="text-white/50 font-mono-custom text-xl max-w-2xl mx-auto mb-12">
           Organizaciones líderes que apuestan por la próxima generación de innovadores, impulsando juntos el futuro de la industria.
         </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-20 animate-fade-in-up">
+          <a 
+            href="https://www.instagram.com/selvanorte.mx/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="glass-card p-8 rounded-[2rem] border-white/5 hover:border-[#ED593B]/50 hover:bg-white/5 transition-all group flex flex-col items-center justify-center gap-2 group"
+          >
+            <span className="text-xs font-mono-custom text-[#ED593B] opacity-70 uppercase tracking-widest group-hover:opacity-100 transition-opacity">Coffee by</span>
+            <h4 className="text-xl font-black text-white uppercase tracking-tighter">Selva Norte</h4>
+            <div className="h-px w-8 bg-white/10 group-hover:w-12 group-hover:bg-[#ED593B] transition-all" />
+            <span className="text-[10px] font-bold text-white/40 uppercase tracking-[0.2em]">Para Día 1</span>
+          </a>
+
+          <a 
+            href="https://www.instagram.com/noyolobrunch/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="glass-card p-8 rounded-[2rem] border-white/5 hover:border-[#4DCCBD]/50 hover:bg-white/5 transition-all group flex flex-col items-center justify-center gap-2 group"
+          >
+            <span className="text-xs font-mono-custom text-[#4DCCBD] opacity-70 uppercase tracking-widest group-hover:opacity-100 transition-opacity">Coffee by</span>
+            <h4 className="text-xl font-black text-white uppercase tracking-tighter">Noyolo</h4>
+            <div className="h-px w-8 bg-white/10 group-hover:w-12 group-hover:bg-[#4DCCBD] transition-all" />
+            <span className="text-[10px] font-bold text-white/40 uppercase tracking-[0.2em]">Para Día 2</span>
+          </a>
+
+          <div className="glass-card p-8 rounded-[2rem] border-white/5 border-dashed flex items-center justify-center min-h-[140px] group opacity-40">
+            <span className="text-[10px] font-black text-white/20 uppercase tracking-[0.3em] group-hover:text-[#4DCCBD] transition-colors">Próximo Aliado</span>
+          </div>
+        </div>
         
         <div className="glass-card max-w-3xl mx-auto p-12 rounded-[3rem] border-white/10 relative overflow-hidden group">
           {/* Decorative glows */}
