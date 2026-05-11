@@ -129,7 +129,7 @@ export const SPEAKERS: Speaker[] = [
     name: 'Arturo Martinez Torres',
     role: 'Innovation & Digitalization Manager',
     company: 'Grupo Quimmco',
-    image: 'https://images.unsplash.com/photo-1504328306483-c4161e382535?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1579487785973-74d2ca7abdd5?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: '18',
@@ -143,7 +143,7 @@ export const SPEAKERS: Speaker[] = [
     name: 'Nestor Quintero',
     role: 'Global Head Quality & CCUS Technologies - CEMEX',
     company: 'CEMEX',
-    image: 'https://images.unsplash.com/photo-1581244276891-8bb09977dad1?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800',
   },
 ];
 
