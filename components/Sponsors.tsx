@@ -40,9 +40,17 @@ const Sponsors: React.FC = () => {
             <span className="text-[10px] font-bold text-white/40 uppercase tracking-[0.2em]">Para Día 2</span>
           </a>
 
-          <div className="glass-card p-8 rounded-[2rem] border-white/5 border-dashed flex items-center justify-center min-h-[140px] group opacity-40">
-            <span className="text-[10px] font-black text-white/20 uppercase tracking-[0.3em] group-hover:text-[#4DCCBD] transition-colors">Próximo Aliado</span>
-          </div>
+          <a 
+            href="https://www.instagram.com/dulce.xilitomx/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="glass-card p-8 rounded-[2rem] border-white/5 hover:border-[#ED593B]/50 hover:bg-white/5 transition-all group flex flex-col items-center justify-center gap-2 group"
+          >
+            <span className="text-xs font-mono-custom text-[#ED593B] opacity-70 uppercase tracking-widest group-hover:opacity-100 transition-opacity">Snacks by</span>
+            <h4 className="text-xl font-black text-white uppercase tracking-tighter">Dulce Xilito</h4>
+            <div className="h-px w-8 bg-white/10 group-hover:w-12 group-hover:bg-[#ED593B] transition-all" />
+            <span className="text-[10px] font-bold text-white/40 uppercase tracking-[0.2em]">Para Día 3</span>
+          </a>
         </div>
         
         <div className="glass-card max-w-3xl mx-auto p-12 rounded-[3rem] border-white/10 relative overflow-hidden group">
